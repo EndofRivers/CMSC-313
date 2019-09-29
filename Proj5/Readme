@@ -1,0 +1,78 @@
+Project Description
+
+Nicholas Long
+
+************************************************************************
+0. Files:
+************************************************************************
+
+proj5.c			C-file that we editted and designed a cfunc
+bookcmp.asm		assembly file that we modified
+test.sh			testing file provided
+driver.c		C-file that we were not to edit
+book.h			Header file that contains the struct
+Readme.txt		This file
+typescript		showcase of the project running
+
+************************************************************************
+1. Expected inputs/outputs
+************************************************************************
+
+[nlong2@linux1 proj5] make test
+./test.sh
+============
+Program output matches expected
+
+
+************************************************************************
+2. How to compile and use this project
+************************************************************************
+
+Compilation
+
+nasm -f	elf64 -g -F dwarf bookcmp.asm
+gcc -g driver.c	proj5.c	bookcmp.o -o proj5
+
+Used the makefile provided
+
+Usage
+
+To run the assignment type,
+
+make test
+
+into the console
+
+************************************************************************
+3. Functionality (describe your contributions here)
+************************************************************************
+
+In proj5.c, the only contribution is naming the variables then iterating
+over the books to print them out
+
+In bookcmp.asm, we were required to first compare the years to see if
+they were same or not. Then if they are the same year, sort them by
+title. If not, then do not sort.
+
+The comparison by title was a minor challenge. I iterated over the title
+names using the rcx register. This loop feels similar to a for loop.
+If the comparison resulted in less than, then you jump to L_lt and the
+same for greater than and L_gt. This will sort the list via qsort
+
+
+************************************************************************
+4. Limitations (if any)
+************************************************************************
+
+All tests passed
+
+************************************************************************
+5. Applications (your thoughts) of this project
+************************************************************************
+
+Sorting is vital to computer science. The world likes it when things are
+sorted. But not just any kind of sorted, they want it sorted in a
+specific way that benefits them. That's where a computer scientist comes
+in and gets all their data the way they want it. This of course then
+spurred the race of efficiency for said sorts.
+

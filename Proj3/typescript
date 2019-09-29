@@ -1,0 +1,53 @@
+Script started on 2018-10-10 22:25:42-04:00
+[nlong2@linux1 proj3] make run[23G[Kmake make
+nasm -g -f elf64 -F dwarf hexConverter.asm
+gcc -g hexConverter.o cfunc.c -o converter.out
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 18446744073709551615
+Hexadecimal value is: FFFFFFFFFFFFFFFF
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: afadf
+Hexadecimal value is: Invalid Input!
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 245453
+Hexadecimal value is: 3BECD
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: afdg dbdgbsgbfnnhnfhnh45647637
+Hexadecimal value is: Invalid Input!
+[nlong2@linux1 proj3] h45647637
+h45647637: Command not found.
+[nlong2@linux1 proj3] 3564276575375787dfjhfdjdtj[23G[Kmake run
+./converter.out
+Enter Number: 3564276575375787dfjhfdjdtj\
+Hexadecimal value is: Invalid Input!
+[nlong2@linux1 proj3] djdtj\
+? make [3G[Kmake run
+djdtj: Command not found.
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 1107895634578278122
+Hexadecimal value is: F600935B33E86EA
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 9223372036854775808
+Hexadecimal value is: 8000000000000000
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 12683270251100288260
+Hexadecimal value is: B0040718331CB504
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 15683272751237288260
+Hexadecimal value is: D9A62D79450FD144
+[nlong2@linux1 proj3] make run
+./converter.out
+Enter Number: 9346678735677288564
+Hexadecimal value is: 81B612CA0DBDF074
+[nlong2@linux1 proj3] exit
+exit
+
+Script done on 2018-10-10 22:29:15-04:00

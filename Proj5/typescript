@@ -1,0 +1,20 @@
+Script started on 2018-11-14 20:47:36-05:00
+[nlong2@linux1 proj5] ls
+bookcmp.asm  expected.txt  proj5.c     test2.dat  test5.dat  test8.dat	typescript
+book.h	     __MACOSX	   test10.dat  test3.dat  test6.dat  test9.dat
+driver.c     Makefile	   test1.dat   test4.dat  test7.dat  test.sh
+[nlong2@linux1 proj5] make
+nasm -f elf64 -g -F dwarf bookcmp.asm
+gcc -g driver.c proj5.c bookcmp.o  -o proj5
+[nlong2@linux1 proj5] make test
+./test.sh
+============
+Program output matches expected
+[nlong2@linux1 proj5] quit
+quit: Command not found.
+[nlong2@linux1 proj5] end
+end: Not in while/foreach.
+[nlong2@linux1 proj5] exit
+exit
+
+Script done on 2018-11-14 20:48:01-05:00
